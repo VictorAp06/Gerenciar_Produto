@@ -22,3 +22,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+BIblioteca - Projeto utilizou Materialize CSS Servidor NodeJs v10.9.8 VueJs @vue/cli 4.5.13
