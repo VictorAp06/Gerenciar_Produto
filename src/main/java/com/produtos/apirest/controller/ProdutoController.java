@@ -20,9 +20,10 @@ public class ProdutoController {
         return produtoRepository.findAll();
     }
 
-    @GetMapping("/products/{cod_produto}")
-    public Produto listaProduto(@PathVariable(value = "cod_produto") Integer cod_produto){
-        return produtoRepository.findByCodProduto(cod_produto  );
+    @GetMapping("/products")
+    @CrossOrigin(value = "http://localhost:8081")
+    public Produto listaProduto(@RequestParam("id") long id){
+        return produtoRepository.findById(id);
     }
 
     @PostMapping("/products/saveProduto")
